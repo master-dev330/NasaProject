@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Patrick+Hand&family=Sanchez&display=swap');
+main {
+  font-family: 'Heebo', serif;
+  font-weight: 300;
+  color: #6b6b6b;
+}
+
+.sub_title{
+  border-bottom: 2px solid #4299E1 ;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.img_title{
+  border-left: 2px solid #4299E1 ;
+  border-right: 2px solid #4299E1 ;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.top_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.down_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #2d2d2d;
+  box-shadow: inset 20px 20px 60px #262626,
+              inset -20px -20px 60px #343434;
+
+}
+
+
+.image_container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: none;
+  margin: 1rem 1rem;
+  overflow: hidden;
+}
+
+.image_container img {
+  /* height: -webkit-fill-available; */
+  height: 50vh;
+}
+
+.image_date{
+  color: #999f9b;
+
+}
+
+hr{
+  color: whitesmoke;
+}
+
+.dec_container {
+  
+  background-color: transparent;
+  text-align: justify;
+  width: 50%;
+  font-size: 20px;
+}
+
+.dec_container p {
+  background-color: transparent;
+}
+.search_container{
+  border-radius: 5px;
+  background: #2d2d2d;
+  box-shadow: inset 20px 20px 60px #262626,
+              inset -20px -20px 60px #343434;
+}
+.search_button {
+  border: none;
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Sanchez', serif;
+  background: #4299E1;
+  box-shadow:  20px 20px 60px #262626,
+               -20px -20px 60px #343434;
+}
+
+.search_button:hover{
+  background: #035da7;
+}
+
+#search {
+  border: none;
+  margin-left: 10px;
+  padding: 0.8rem 0.5rem;
+  background: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.message {
+  text-align: center;
+  font-family: system-ui;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+.loader-image {
+  background-color: transparent;
+  margin-right: 5px;
+}
+.image_copyright{
+  color: #4299E1;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .down_container {
+    flex-direction: column;
+  }
+  .image_container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .image_container img {
+    width: 100%;
+  height: auto;
+  }
+  .dec_container {
+    width: 100%;
+  }
+}
